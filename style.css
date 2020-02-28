@@ -1,0 +1,126 @@
+.arrow {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+    top: 5px;
+    left: 4px;
+  }
+ .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  img {
+      width: 100%;
+  }
+  .header-container {
+      display: flex;
+      flex-direction: row;
+  }
+  .logo {
+      display: flex;
+      width: 40%;
+  }
+  .search {
+      display: flex;
+      position: relative;
+      left: 10px;
+      padding: 6px;
+      bottom: 2px;
+  }
+  .search-input {
+      border: 1px solid black;
+      font-size: 20px;
+      padding-left: 30px;
+  }
+ .fa-search {
+     display: flex;
+     position: relative;
+     top: 10px;
+     right: 230px;
+ }
+ .nav-menu {
+     display: none;
+ }
+ @media (min-width: 375px) {
+    .logo {
+        width: 10%;
+    }
+    .search {
+        bottom: 4px;
+    }
+    .search-input {
+        font-size: 25px;
+    }
+    .fa-search {
+        margin: 2px;
+        right: 275px;
+    }
+    .nav-menu {
+        display: none;
+    }
+ }
+ @media (min-width: 425px) {
+     .search-input {
+         width: 300px;
+     }
+     .fa-search {
+         right: 325px;
+     }
+     .nav-menu {
+         display: none;
+     }
+     
+ }
+ @media (min-width: 768px) {
+     .logo {
+         width: 10%;
+     }
+     .search {
+        height: 30px;
+     }
+     .fa-search {
+          right: 275px;
+          top: 25px;
+     }
+     .search-input {
+         position: relative;
+         width: 40%;
+         top: 20px;
+     }
+     .arrow {
+         display: none;
+     }
+     .nav-menu {
+         display: flex;
+         flex-direction: column;
+     }
+     .nav-menu-items {
+        display: flex;
+        position: relative;
+        top: 20px;
+        list-style: none;
+    }
+    .nav-menu-items li {
+        text-decoration: none;
+        width: 35%;
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+ }
+ @media (min-width: 1024px) {
+     .logo {
+         width: 5%;
+     }
+     .search {
+         top: 20px;
+         width: 100%;
+     }
+     .fa-search {
+         top: 18px;
+     }
+     .arrow {
+         top: 17px;
+     }
+ }
